@@ -58,6 +58,7 @@ nav a:hover {
     --bg-color: #000000;
     --text-color: #F0EFF4;
     --nav-bg-color: #3A3E3B;
+    --nav-bg-color-l: #5b5d5b;
     --nav-text-color: #9E829C;
     --nav-hover-color: #291528;
 }
@@ -103,8 +104,8 @@ nav a:hover {
   }
   
   .tab {
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    border: 2px solid var(--nav-text-color);
+    background-color: var(--bg-color);
   }
   
   .tab button {
@@ -129,7 +130,7 @@ nav a:hover {
   
   .tabcontent {
     display: none;
-    padding: 20px 12px;
+    padding: 10px 10px;
     border: 1px solid #ccc;
     border-top: none;
   }
@@ -173,22 +174,53 @@ nav a:hover {
 .dark-theme label,
 .dark-theme input,
 .dark-theme button[type="submit"] {
-  color: var(--text-color);
+  color: var(--nav-text-color);
 }
 .light-theme button[type="submit"] {
-    background-color: #4CAF50;
+    background-color: var(--nav-bg-color);
   }
   
 .light-theme button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: var(--nav-hover-color);
   }
   
 .dark-theme button[type="submit"] {
-    background-color: #9CCC65;
+    background-color: var(--nav-bg-color);
   }
   
 .dark-theme button[type="submit"]:hover {
-    background-color: #8BC34A;
+    background-color: var(--text-color);
   }
 
-  
+.dark-theme button[type="submit"]:active {
+    background-color: var(--nav-hover-color);
+  }
+
+.dark-theme .tablinks {
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+}
+.dark-theme .tablinks:hover {
+    background-color: var(--nav-hover-color);
+    color: var(--nav-text-color);
+
+}
+.dark-theme .tablinks.active{
+    background-color: var(--nav-hover-color);
+}
+
+.dark-theme .tablinks:active{
+    background-color: var(--text-color);
+}
+
+.dark-theme .modal-content{
+    background-color: var(--nav-hover-color);
+}
+
+.dark-theme input{
+    background-color: var(--nav-text-color);
+    color: var(--text-color);
+}
+
+
+

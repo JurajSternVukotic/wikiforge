@@ -11,3 +11,5 @@
     - Modify theme colors when mockup pages are done
     - Add user made themes!
 ---
+## Login/Register
+    - Remove the Login and Register text from the login and register
