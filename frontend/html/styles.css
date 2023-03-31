@@ -8,14 +8,21 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 nav {
     width: 100%;
     background-color: var(--nav-bg-color);
     overflow: auto;
-    position: fixed;
     top: 0;
+}
+
+.topnav{
+    position: fixed;
 }
 
 nav ul {
@@ -99,7 +106,6 @@ nav a:hover {
 
 .tab {
     border: 2px solid var(--nav-text-color);
-    background-color: var(--bg-color);
 }
 
 .tab button {
@@ -118,7 +124,6 @@ nav a:hover {
 .tabcontent {
     display: none;
     padding: 10px 10px;
-    border: 1px solid #ccc;
     border-top: none;
 }
 
@@ -140,54 +145,146 @@ button[type="submit"] {
     border-radius: 4px;
 }
     
-    .light-theme label,
-    .light-theme input,
-    .light-theme button[type="submit"],
-    .dark-theme label,
-    .dark-theme input,
-    .dark-theme button[type="submit"] {
-    color: var(--nav-text-color);
-    }
+.light-theme label,
+.light-theme input,
+.light-theme button[type="submit"],
+.dark-theme label,
+.dark-theme input,
+.dark-theme button[type="submit"] {
+    color: var(--text-color);
+}
     
-    .light-theme button[type="submit"],
-    .dark-theme button[type="submit"] {
+.light-theme button[type="submit"],
+.dark-theme button[type="submit"] {
     background-color: var(--nav-bg-color);
-    }
+}
     
-    .light-theme button[type="submit"]:hover,
-    .dark-theme button[type="submit"]:hover {
+.light-theme button[type="submit"]:hover,
+.dark-theme button[type="submit"]:hover {
     background-color: var(--nav-hover-color);
-    }
+}
     
-    .dark-theme button[type="submit"]:active {
+.dark-theme button[type="submit"]:active {
     background-color: var(--text-color);
-    }
+}
     
-    .dark-theme .tablinks {
+.dark-theme .tablinks {
     background-color: var(--nav-bg-color);
     color: var(--nav-text-color);
-    }
+}
     
-    .dark-theme .tablinks:hover {
+.dark-theme .tablinks:hover {
     background-color: var(--nav-hover-color);
     color: var(--nav-text-color);
-    }
+}
     
-    .dark-theme .tablinks.active {
+.dark-theme .tablinks.active {
     background-color: var(--nav-hover-color);
-    }
+}
     
-    .dark-theme .tablinks:active {
+.dark-theme .tablinks:active {
     background-color: var(--text-color);
-    }
+}
     
-    .dark-theme .modal-content {
+.dark-theme .modal-content {
     background-color: var(--nav-hover-color);
-    }
+}
     
-    .dark-theme input {
+.dark-theme input {
     background-color: var(--nav-text-color);
     color: var(--text-color);
-    }
+}
     
+.dark-theme button[type="submit"]:active {
+    background-color: var(--text-color);
+}
     
+.dark-theme .tablinks {
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+}
+    
+.dark-theme .tablinks:hover {
+    background-color: var(--nav-hover-color);
+    color: var(--nav-text-color);
+}
+    
+.dark-theme .tablinks.active {
+    background-color: var(--nav-hover-color);
+}
+    
+.dark-theme .tablinks:active {
+    background-color: var(--text-color);
+}
+    
+.dark-theme .modal-content {
+    background-color: var(--nav-hover-color);
+}
+    
+.dark-theme input {
+    background-color: var(--nav-text-color);
+    color: var(--text-color);
+}
+
+.light-theme button[type="submit"]:active {
+    background-color: var(--nav-text-color);
+}
+        
+.light-theme .tablinks {
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+}
+        
+.light-theme .tablinks:hover {
+    background-color: var(--nav-hover-color);
+    color: var(--nav-text-color);
+}
+        
+.light-theme .tablinks.active {
+background-color: var(--nav-hover-color);
+}
+        
+.light-theme .tablinks:active {
+    background-color: var(--text-color);
+}
+        
+.light-theme .modal-content {
+    background-color: var(--nav-bg-color);
+}
+        
+.light-theme input {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.footer-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-links li {
+    padding: 0 10px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+    font-size: 16px;
+  }
+  
+  .footer-links a:hover {
+    color: var(--nav-hover-color);
+  }
+  
+  footer {
+    background-color: var(--nav-bg-color);
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
