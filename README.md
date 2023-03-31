@@ -1,1 +1,3 @@
 # wikiforge
+
+Welcome to WikiForge!
