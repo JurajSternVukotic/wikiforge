@@ -42,18 +42,14 @@ nav a:hover {
     background-color: var(--nav-hover-color);
 }
 
-/* Light theme styles */
 .light-theme {
     --bg-color: #F7F7FF;
     --text-color: #131112;
     --nav-bg-color: #C49991;
     --nav-text-color: #60656F;
     --nav-hover-color: #a5766e;
-    /* #279AF1 */
 }
 
-
-/* Dark theme styles */
 .dark-theme {
     --bg-color: #000000;
     --text-color: #F0EFF4;
@@ -73,20 +69,19 @@ nav a:hover {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-content {
-    background-color: #fefefe;
+}
+
+.modal-content {
+    background-color: var(--nav-hover-color);
     margin: 5% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid var(--nav-text-color);
     width: 80%;
     max-width: 500px;
-  }
-  
-  .close {
+}
+
+.close {
     color: red;
-    float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
@@ -94,21 +89,20 @@ nav a:hover {
     top: 10px;
     right: 10px;
     z-index: 1;
-  
-  }
-  
-  .close:hover, .close:focus {
+}
+
+.close:hover, .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  .tab {
+}
+
+.tab {
     border: 2px solid var(--nav-text-color);
     background-color: var(--bg-color);
-  }
-  
-  .tab button {
+}
+
+.tab button {
     background-color: inherit;
     float: left;
     border: none;
@@ -118,109 +112,82 @@ nav a:hover {
     transition: 0.3s;
     font-size: 17px;
     width: 50%;
-  }
-  
-  .tab button:hover {
-    background-color: #ddd;
-  }
+}
 
-  .tab button.active {
-    background-color: #ccc;
-  }
-  
-  .tabcontent {
+
+.tabcontent {
     display: none;
     padding: 10px 10px;
     border: 1px solid #ccc;
     border-top: none;
-  }
-  
-  form {
+}
+
+form {
     display: flex;
     flex-direction: column;
-  }
-  
-  label, input {
+}
+
+label, input {
     margin-bottom: 10px;
-  }
-  
-  button[type="submit"] {
-    width: 100px;
-    align-self: flex-end;
-  }
-  
-  button[type="submit"] {
+}
+
+button[type="submit"] {
     width: 100%;
-    background-color: #4CAF50;
-    color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     border-radius: 4px;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
-
-
-
-.light-theme label,
-.light-theme input,
-.light-theme button[type="submit"] {
-  color: var(--text-color);
 }
-.dark-theme label,
-.dark-theme input,
-.dark-theme button[type="submit"] {
-  color: var(--nav-text-color);
-}
-.light-theme button[type="submit"] {
+    
+    .light-theme label,
+    .light-theme input,
+    .light-theme button[type="submit"],
+    .dark-theme label,
+    .dark-theme input,
+    .dark-theme button[type="submit"] {
+    color: var(--nav-text-color);
+    }
+    
+    .light-theme button[type="submit"],
+    .dark-theme button[type="submit"] {
     background-color: var(--nav-bg-color);
-  }
-  
-.light-theme button[type="submit"]:hover {
+    }
+    
+    .light-theme button[type="submit"]:hover,
+    .dark-theme button[type="submit"]:hover {
     background-color: var(--nav-hover-color);
-  }
-  
-.dark-theme button[type="submit"] {
-    background-color: var(--nav-bg-color);
-  }
-  
-.dark-theme button[type="submit"]:hover {
+    }
+    
+    .dark-theme button[type="submit"]:active {
     background-color: var(--text-color);
-  }
-
-.dark-theme button[type="submit"]:active {
-    background-color: var(--nav-hover-color);
-  }
-
-.dark-theme .tablinks {
+    }
+    
+    .dark-theme .tablinks {
     background-color: var(--nav-bg-color);
     color: var(--nav-text-color);
-}
-.dark-theme .tablinks:hover {
+    }
+    
+    .dark-theme .tablinks:hover {
     background-color: var(--nav-hover-color);
     color: var(--nav-text-color);
-
-}
-.dark-theme .tablinks.active{
+    }
+    
+    .dark-theme .tablinks.active {
     background-color: var(--nav-hover-color);
-}
-
-.dark-theme .tablinks:active{
+    }
+    
+    .dark-theme .tablinks:active {
     background-color: var(--text-color);
-}
-
-.dark-theme .modal-content{
+    }
+    
+    .dark-theme .modal-content {
     background-color: var(--nav-hover-color);
-}
-
-.dark-theme input{
+    }
+    
+    .dark-theme input {
     background-color: var(--nav-text-color);
     color: var(--text-color);
-}
-
-
-
+    }
+    
+    
