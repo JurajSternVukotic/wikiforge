@@ -17,5 +17,13 @@ Ovo može biti korisno raznim ljudima i poslovnim procesima, od pisaca, game dev
     - Friends lista za autorizaciju 
     - Chat
     - Statistike vašeg profila i određenog Wiki resursa ili stranice
-
-
+    - Komentari i recenzije na stranicama
+---
+### Alati korišteni:
+    - GitHub
+    - HTML, CSS, JavaScript
+    - Flask (Python)
+    - Docker
+---
+### Pokretanje aplikacije lokalno
+---
