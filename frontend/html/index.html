@@ -20,9 +20,31 @@
             <li><a href="">Tutorial</a></li>
             <li><a href="">Profile</a></li>
             <li><a href="">Language</a></li>
-            <li><a href="">Theme</a></li>
+            <li><a href="#" id="theme-toggler">Theme</a></li>
             <li><a href="">-&#62;</a></li>
         </ul>
     </nav>
+    <script>
+        const themeToggler = document.getElementById("theme-toggler");
+        const body = document.body;
+
+        function switchTheme() {
+            if (body.classList.contains("light-theme")) {
+                body.classList.replace("light-theme", "dark-theme");
+                localStorage.setItem("theme", "dark-theme");
+            } else {
+                body.classList.replace("dark-theme", "light-theme");
+                localStorage.setItem("theme", "light-theme");
+            }
+        }
+
+        function loadTheme() {
+            const savedTheme = localStorage.getItem("theme") || "light-theme";
+            body.classList.add(savedTheme);
+        }
+
+        themeToggler.addEventListener("click", switchTheme);
+        loadTheme();
+    </script>
 </body>
 </html>

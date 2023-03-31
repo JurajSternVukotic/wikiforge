@@ -6,11 +6,13 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 nav {
     width: 100%;
-    background-color: #333;
+    background-color: var(--nav-bg-color);
     overflow: auto;
     position: fixed;
     top: 0;
@@ -31,11 +33,29 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: var(--nav-text-color);
     display: block;
     padding: 0 10px;
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: var(--nav-hover-color);
+}
+
+/* Light theme styles */
+.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --nav-bg-color: #f0f0f0;
+    --nav-text-color: #333;
+    --nav-hover-color: #ccc;
+}
+
+/* Dark theme styles */
+.dark-theme {
+    --bg-color: #333333;
+    --text-color: #ffffff;
+    --nav-bg-color: #444;
+    --nav-text-color: #fff;
+    --nav-hover-color: #555;
 }
