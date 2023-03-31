@@ -11,21 +11,24 @@
     <nav>
         <ul>
             <li><a href="">&#60;-</a> </li>
-            <li><a href="">Home</a></li>
-            <li><a href="">My Wikis</a></li>
-            <li><a href="">Friends</a></li>
-            <li><a href="">Bookmarks</a></li>
+            <li><a href="" id="home">Home</a></li>
+            <li><a href="" id="my-wikis">My Wikis</a></li>
+            <li><a href="" id="friends">Friends</a></li>
+            <li><a href="" id="bookmarks">Bookmarks</a></li>
             <li><a href=""><h1>LOGO</h1></a></li>
             <li><a href="">ANIM</a></li>
-            <li><a href="">Tutorial</a></li>
-            <li><a href="">Profile</a></li>
-            <li><a href="">Language</a></li>
-            <li><a href="#" id="theme-toggler">Theme</a></li>
+            <li><a href="" id="tutorial">Tutorial</a></li>
+            <li><a href="" id="profile">Profile</a></li>
+            <li><a href="#" id="language_toggler">Language</a></li>
+            <li><a href="#" id="theme_toggler">Theme</a></li>
             <li><a href="">-&#62;</a></li>
         </ul>
     </nav>
+
+    <script src="../javascript/translations.js"></script>
+
     <script>
-        const themeToggler = document.getElementById("theme-toggler");
+        const themeToggler = document.getElementById("theme_toggler");
         const body = document.body;
 
         function switchTheme() {
@@ -45,6 +48,43 @@
 
         themeToggler.addEventListener("click", switchTheme);
         loadTheme();
+
+        const languageToggler = document.getElementById("language_toggler");
+        const home = document.getElementById("home");
+        const myWikis = document.getElementById("my-wikis");
+        const friends = document.getElementById("friends");
+        const bookmarks = document.getElementById("bookmarks");
+        const tutorial = document.getElementById("tutorial");
+        const profile = document.getElementById("profile");
+        const language_toggler = document.getElementById("language_toggler");
+        const theme_toggler = document.getElementById("theme_toggler")
+
+
+        function switchLanguage() {
+        const currentLanguage = localStorage.getItem("language") || "en";
+        const newLanguage = currentLanguage === "en" ? "hr" : "en";
+        localStorage.setItem("language", newLanguage);
+        updateTranslations(newLanguage);
+        }
+
+        function loadLanguage() {
+        const savedLanguage = localStorage.getItem("language") || "en";
+        updateTranslations(savedLanguage);
+        }
+
+        function updateTranslations(lang) {
+        home.textContent = translations[lang].home;
+        myWikis.textContent = translations[lang].myWikis;
+        friends.textContent = translations[lang].friends;
+        bookmarks.textContent = translations[lang].bookmarks;
+        tutorial.textContent = translations[lang].tutorial;
+        profile.textContent = translations[lang].profile;
+        language_toggler.textContent = translations[lang].language_toggler;
+        theme_toggler.textContent = translations[lang].theme_toggler;
+        }
+
+        languageToggler.addEventListener("click", switchLanguage);
+        loadLanguage();
     </script>
 </body>
 </html>
