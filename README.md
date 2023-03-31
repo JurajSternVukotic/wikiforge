@@ -21,7 +21,7 @@ Ovo može biti korisno raznim ljudima i poslovnim procesima, od pisaca, game dev
 ---
 ### Alati korišteni:
     - GitHub
-    - HTML, CSS, JavaScript
+    - HTML, CSS (Tailwind), JavaScript
     - Flask (Python)
     - Docker
 ---
