@@ -14,3 +14,6 @@
 ## Login/Register
     - Remove the Login and Register text from the login and register
     - Add more info to Register
+---
+## MUST
+    - Separate out repeating page elements (topnav, login register modal...)
