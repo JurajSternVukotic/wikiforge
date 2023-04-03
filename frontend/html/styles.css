@@ -492,4 +492,6 @@ main {
         border-radius: 5px;
         margin-bottom: 1.5rem;
     }
-    
+    .tabcontent > h3  {
+        visibility: hidden;
+    }
