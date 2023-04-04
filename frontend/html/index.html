@@ -46,7 +46,7 @@
       
           <div id="register" class="tabcontent">
             <h3>Register</h3>
-            <form>
+            <form onsubmit="return validateRegistration();">
               <label for="register-username">Username:</label>
               <input type="text" id="register-username" name="register-username" required>
           
@@ -84,7 +84,7 @@
           
               <div>
                 <input type="checkbox" id="accept-privacy" name="accept-privacy" required>
-                <label for="accept-privacy">I accept the <a href="terms-of-service.html#privacy-policy#privacy_policy" target="_blank">Privacy Policy</a></label>
+                <label for="accept-privacy">I accept the <a href="terms-of-service.html#privacy_jump" target="_blank">Privacy Policy</a></label>
               </div>
           
               <button type="submit">Register</button>
