@@ -132,8 +132,13 @@ form {
     flex-direction: column;
 }
 
-label, input {
+input {
     margin-bottom: 10px;
+
+}
+
+label{
+    margin-bottom: 3px;
 }
 
 button[type="submit"] {
@@ -495,3 +500,20 @@ main {
     .tabcontent > h3  {
         visibility: hidden;
     }
+
+   select{
+        background-color: var(--nav-text-color);
+        color: var(--text-color);
+        margin-bottom: 10px;
+    }
+
+    .light-theme select{
+        background-color: var(--bg-color);
+    }
+
+    input[type='checkbox'] {
+        accent-color: var(--nav-text-color);
+        margin-bottom: 10px;
+        
+    }
+    

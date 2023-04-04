@@ -14,8 +14,6 @@
     - Add user made themes!
 ---
 ## Login/Register
-    - Remove the Login and Register text from the login and register
-    - Add more info to Register (Agree to ToS and PrivPol, Age, Birthday, Display name)
     - Add fucntionality with salted hash passwords
     - Add the backend and change front accordingly
 ---
