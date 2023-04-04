@@ -17,6 +17,8 @@
     - Add fucntionality with salted hash passwords
     - Add the backend and change front accordingly
     - Sync Register from index to all pages
+    - Add html restrictions to form (username 3-32 characters, password and confirm password should match, password should be >8 character, 1 uppercase, 1 number, 1 special character, user should be >13 yo, term should be accepted)
+    - Server side validation against tampering and invalid data
 ---
 ## MUST
     - Separate out repeating page elements (topnav, login register modal...)
