@@ -16,6 +16,7 @@
 ## Login/Register
     - Add fucntionality with salted hash passwords
     - Add the backend and change front accordingly
+    - Sync Register from index to all pages
 ---
 ## MUST
     - Separate out repeating page elements (topnav, login register modal...)
